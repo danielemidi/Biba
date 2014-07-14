@@ -1,0 +1,1 @@
+java -cp Biba/lib/asg.cliche-110413.jar:Biba/lib/ojdbc6.jar:. -jar edu.purdue.dmidi.Biba.jar

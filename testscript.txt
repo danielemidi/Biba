@@ -1,0 +1,33 @@
+// Execute the program with the following command line parameters. These are commands that will be automatically interpreted and executed.
+
+"l customerservice"
+
+"q 'SELECT * FROM orders'"
+"q 'SELECT zip, city FROM zipcodes'"
+"q 'SELECT cno FROM customers'"
+"q 'SELECT C.cno FROM customers C JOIN parts P'"
+
+"l admin"
+
+"q 'SELECT * FROM orders'"
+"q 'SELECT zip, city FROM zipcodes'"
+"q 'SELECT cno FROM customers'"
+"q 'SELECT C.cno FROM customers C JOIN parts P'"
+
+"sp subjectwatermark"
+
+"l inventory"
+
+"q 'SELECT * FROM orders'"
+"q 'SELECT zip, city FROM zipcodes'"
+"q 'SELECT cno FROM customers'"
+"q 'SELECT C.cno FROM customers C JOIN parts P'"
+
+
+
+// CAUTION: the execution of the following commands too will perform permanent modifications on the data in the database!
+
+"q 'INSERT INTO orders VALUES (0,1,0)'"
+"q 'DELETE FROM customers C JOIN parts P WHERE C.cno=\"zipcodes1\"'"
+"q 'UPDATE * FROM parts'"
+"q 'DELETE eno FROM employees'"
